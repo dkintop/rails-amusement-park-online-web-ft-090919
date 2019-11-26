@@ -1,12 +1,27 @@
 <%=form_for @user do |f|%>
 
 <%= f.label :name%> <br>
-<%= f.textfield :name%>
+<%= f.text_field :name%>
 
 <%=f.label :password%>
-<%=f.textfield :password%>
+<%=f.text_field :password%>
 
 <%=f.label :nausea%>
-<%=>
+<%=f.text_field :nausea%>
+
+<%=f.label :happiness%>
+<%=f.text_field :happiness%>
+
+<%=f.label :tickets, "How many tickets do you have?"%>
+<%=f.text_field :tickets%>
+
+<%=f.label :height%>
+<%=f.text_field :height%>
+
+<%=f.label :admin, "Check box if you are an owner of the park."%>
+<%=f.check_box :admin%>
+
+
+
 
 <%end%>
