@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => ""
+  root :to => "static#home"
   resources :users, only: [:new]
 
 end
