@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
     validates :password, presence: :true
   
     def mood
+        unless :admin
         happiness > nausea ? "happy" : "sad"
+        end
     end
 end
