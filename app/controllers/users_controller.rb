@@ -4,6 +4,14 @@ class UsersController < ApplicationController
     end
 
     def create
+      @user = User.create()
+
+      redirect_to user_path(@user)
+    end
+
+    private
+
+    def user_params
       
     end
 
